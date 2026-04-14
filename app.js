@@ -11,6 +11,9 @@ const orderRoutes = require("./orders.js");
 //Add some way to read json
 app.use(express.json());
 
+//Frontend
+app.use(express.static("public"));
+
 //Use the routes that were imported
 app.use("/customers", custRoutes);
 app.use("/phones", phoneRoutes);
